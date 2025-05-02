@@ -29,7 +29,7 @@ Here you can explore a variety of data projects, including:
 ---
 
 ---
-## 💡 Live Demo (optional)
+## 💡 Live
 
 > Coming soon: [https://your-domain.com](#)
 
