@@ -28,6 +28,19 @@ Here you can explore a variety of data projects, including:
 
 ---
 
+---
+## 💡 Live Demo (optional)
+
+> Coming soon: [https://your-domain.com](#)
+
+---
+
+## 🙌 Thanks for visiting!
+
+If you're someone who enjoys learning by building, feel free to explore and get inspired.  
+**Happy exploring!**
+---
+
 ## 🛠 Folder Structure
 
 ```bash
@@ -42,13 +55,3 @@ my_website/
 ├── .gitignore
 └── README.md
 
-## 💡 Live Demo (optional)
-
-> Coming soon: [https://your-domain.com](#)
-
----
-
-## 🙌 Thanks for visiting!
-
-If you're someone who enjoys learning by building, feel free to explore and get inspired.  
-**Happy exploring!**
