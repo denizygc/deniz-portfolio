@@ -1,54 +1,54 @@
-my_portfolio/
-│
+# 🌐 Deniz Yağcı — Portfolio Website
+
+Hi! I'm **Deniz Yağcı**, a data scientist passionate about solving real-world problems with data-driven solutions.  
+This website is my personal sandbox — built entirely with **Flask** — where I present selected projects and experiments from my journey in **AI**, **Machine Learning**, and **LLMs**.
+
+> 📌 The goal of this site is to **reflect personal growth**, share learnings, and demonstrate how I apply data science in practice.
+
+---
+
+## 🚀 Tech Stack
+
+- **Flask** (Backend)
+- **HTML5 + CSS3** (Frontend)
+- **Jinja2** (Templating)
+- **Git & GitHub** (Version Control)
+
+---
+
+## 📁 Project Categories Showcased
+
+Here you can explore a variety of data projects, including:
+
+- 🤖 **Machine Learning Models**
+- 🧠 **Large Language Models (LLMs) & Applications**
+- 🕹 **LLM Agent Development & Automation**
+- 🖼 **Image Processing & Classification**
+- 🧪 **Experimental Approaches to Real-World Problems**
+
+---
+
+## 🛠 Folder Structure
+
+```bash
+my_website/
 ├── app/
-│   ├── __init__.py              # App factory
-│   ├── config.py                # Configuration settings
-│   │
-│   ├── main/                    # Main homepage & layout
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── forms.py             # If contact/forms added
-│   │
-│   ├── projects/                # ML/AI project-specific pages
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   └── templates/
-│   │       └── projects/
-│   │           ├── project_list.html
-│   │           └── project_detail.html
-│   │           └── layout.html
-│   │
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── styles.css
-│   │   └── img/
-│   │       └── profile.jpg
-│   │
-│   └── templates/
-│       └── base.html            # Shared layout (used by layout.html)
-│   │   └── main/
-│   │       └── index.html        
-│
-├── run.py                      # Entry point
-├── requirements.txt            # Packages to install
+│   ├── main/             # Routes for main pages
+│   ├── projects/         # Routes and logic for project pages
+│   ├── static/           # CSS, images, PDF, etc.
+│   └── templates/        # HTML templates
+├── run.py                # Entry point to start the Flask app
+├── requirements.txt      # Python package requirements
+├── .gitignore
 └── README.md
 
+## 💡 Live Demo (optional)
 
+> Coming soon: [https://your-domain.com](#)
 
+---
 
-# Welcome!
+## 🙌 Thanks for visiting!
 
-Hi! I’m a data scientist, and I built this site purely as a space for personal growth — to reflect real-world problems and explore data-driven ideas. I love experimenting with new methods, practicing what I learn, and turning curiosity into small but meaningful projects. This website is my sandbox to learn, test, and grow.
-
-If you're someone who enjoys learning by doing and believes in the power of curiosity, you might find something inspiring here.
-
-## 🔍 You can explore sample projects in topics like:
-
-- 📊 **Machine Learning Models**  
-- 🧠 **Large Language Models (LLMs) & Applications**  
-- 🤖 **LLM Agent Development & Automation**  
-- 🖼️ **Image Processing & Classification**  
-- 🛠️ **Experimental Approaches to Real-World Problems**
-
+If you're someone who enjoys learning by building, feel free to explore and get inspired.  
 **Happy exploring!**
-
