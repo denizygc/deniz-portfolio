@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deniz Yagci - Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="margin: 0; font-family: sans-serif;">
+  
+  <!-- Centered Header Navigation -->
+  <header style="
+  background-color: #f5eee9;
+  padding: 0.75rem 0rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+">
+  <a href="/" style="text-decoration: none; font-weight: bold; color: black;">HOME</a>
+  <a href="/projects" style="text-decoration: none; font-weight: bold; color: black;">PROJECTS</a>
+</header>
+
+  <!-- Page Content -->
+  <main style="padding: 4rem 3rem 2rem 3rem;">  <!-- increased top padding to make space -->
+    {% block content %}{% endblock %}
+  </main>
+
+</body>
+</html>
+
+

@@ -1,0 +1,26 @@
+# Ignore virtual environment
+venv/
+venv-myweb/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment and secret files
+.env
+
+# Ignore OS-specific junk
+.DS_Store
+
+# Ignore database files
+*.sqlite3
+
+# Ignore model files
+*.pkl
+
+# Ignore Flask instance folder
+instance/
+
+# Optional: Ignore OS/IDE files
+.DS_Store
+*.vscode/

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex; gap: 2rem; margin-top: 2rem;">
+
+  <!-- 🔲 Full sidebar wrapped in a darker beige frame -->
+  <div style="width: 260px; background-color: #e8ddd2; border: 2px solid #333; border-radius: 12px; padding: 1.5rem;">
+    <aside style="padding-right: 0;">
+      <h3 style="margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;">
+        🧪 My Projects
+      </h3>
+      <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+
+        <li>
+          <a href="/projects/project-1" style="
+            display: block;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+          " onmouseover="this.style.backgroundColor='#e6f2ff'" onmouseout="this.style.backgroundColor='#f9f9f9'">
+            📊 Project 1
+          </a>
+        </li>
+
+        <li>
+          <a href="/projects/project-2" style="
+            display: block;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+          " onmouseover="this.style.backgroundColor='#e6f2ff'" onmouseout="this.style.backgroundColor='#f9f9f9'">
+            🧠 Project 2
+          </a>
+        </li>
+
+        <li>
+          <a href="/projects/project-3" style="
+            display: block;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+          " onmouseover="this.style.backgroundColor='#e6f2ff'" onmouseout="this.style.backgroundColor='#f9f9f9'">
+            🤖 Project 3
+          </a>
+        </li>
+
+        <li>
+          <a href="/projects/project-4" style="
+            display: block;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+          " onmouseover="this.style.backgroundColor='#e6f2ff'" onmouseout="this.style.backgroundColor='#f9f9f9'">
+            🖼️ Project 4
+          </a>
+        </li>
+
+        <li>
+          <a href="/projects/project-5" style="
+            display: block;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+          " onmouseover="this.style.backgroundColor='#e6f2ff'" onmouseout="this.style.backgroundColor='#f9f9f9'">
+            🛠️ Project 5
+          </a>
+        </li>
+
+      </ul>
+    </aside>
+  </div>
+
+  <!-- 📄 Project Detail Area -->
+  <section style="flex: 1;">
+    {% block project_content %}{% endblock %}
+  </section>
+
+</div>
+{% endblock %}
