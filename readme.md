@@ -10,6 +10,7 @@ This website is my personal sandbox — built entirely with **Flask** — where 
 - **Flask** (Backend)
 - **HTML5 + CSS3** (Frontend)
 - **Jinja2** (Templating)
+- **MongoDB Atlas** (Cloud Database)
 - **Git & GitHub** (Version Control)
 
 ---
