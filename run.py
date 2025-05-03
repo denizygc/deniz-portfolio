@@ -5,10 +5,18 @@ import os
 import logging
 from dotenv import load_dotenv
 import pytz
+from pre_run import run as run_pre_start
 
+# Load environment variables
 load_dotenv()
+
+# run pre-start logic
+run_pre_start()
+
+# Create Flask app
 app = create_app()
 
+# Log to MongoDB on startup
 try:
     if not db.logs.find_one({"event": "app_started"}):
         istanbul_time = datetime.now(pytz.timezone("Europe/Istanbul"))
