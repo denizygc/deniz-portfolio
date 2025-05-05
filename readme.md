@@ -50,6 +50,7 @@ my_website/
 │   ├── projects/         # Routes and logic for project pages
 │   ├── static/           # CSS, images, PDF, etc.
 │   └── templates/        # HTML templates
+│   └── utils/        # HTML templates
 ├── run.py                # Entry point to start the Flask app
 ├── pre_run.py            # Adding IP MongoDB 
 ├── requirements.txt      # Python package requirements

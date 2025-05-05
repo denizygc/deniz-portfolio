@@ -6,6 +6,7 @@ import logging
 from dotenv import load_dotenv
 import pytz
 from pre_run import run as run_pre_start
+from app.utils.logging import log_startup 
 
 # Load environment variables
 load_dotenv()
@@ -16,15 +17,12 @@ run_pre_start()
 # Create Flask app
 app = create_app()
 
-# Log to MongoDB on startup
-try:
-    if not db.logs.find_one({"event": "app_started"}):
-        istanbul_time = datetime.now(pytz.timezone("Europe/Istanbul"))
-        db.logs.insert_one({
-            "event": "app_started",
-            "started_at": istanbul_time,
-            "environment": os.environ.get("FLASK_ENV", "development")
-        })
-        print("✅ Logged app startup to MongoDB")
-except Exception as e:
-    logging.error(f"MongoDB startup logging failed: {e}")
+if __name__ == "__main__":
+    with app.app_context(): # Initialize app context
+        log_startup()
+
+    app.run() # Start the Flask app
+
+
+
+
