@@ -51,6 +51,7 @@ my_website/
 │   ├── static/           # CSS, images, PDF, etc.
 │   └── templates/        # HTML templates
 ├── run.py                # Entry point to start the Flask app
+├── pre_run.py            # Adding IP MongoDB 
 ├── requirements.txt      # Python package requirements
 ├── .gitignore
 └── README.md
