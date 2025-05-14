@@ -54,5 +54,6 @@ my_website/
 ├── run.py                # Entry point to start the Flask app
 ├── pre_run.py            # Adding IP MongoDB 
 ├── requirements.txt      # Python package requirements
+├── tests/                # Test files
 ├── .gitignore
 └── README.md

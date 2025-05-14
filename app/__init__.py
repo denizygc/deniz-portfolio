@@ -10,5 +10,10 @@ def create_app():
 
     app.register_blueprint(main_bp)
     app.register_blueprint(projects_bp, url_prefix='/projects')
+    
+    # Healthcheck route
+    @app.route("/healthcheck")
+    def healthcheck():
+        return {"status": "ok"}, 200
 
     return app
