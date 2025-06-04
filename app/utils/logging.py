@@ -2,6 +2,7 @@ from datetime import datetime
 import pytz
 import os
 from app.extensions import db
+import tzlocal
 
 def log_startup():
     # Only log for main process  
@@ -10,7 +11,8 @@ def log_startup():
             return 
 
     try:
-        timezone = pytz.timezone("Europe/Istanbul")
+        timezone = tzlocal.get_localzone()
+        print(f"Detected local timezone: {timezone}")
         now = datetime.now(timezone)
 
         db.logs.insert_one({
